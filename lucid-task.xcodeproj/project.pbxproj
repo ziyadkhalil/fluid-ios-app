@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB8DDD9E22803EF900FBF12D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8DDD9D22803EF900FBF12D /* AppDelegate.swift */; };
+		BB8DDDA022803EF900FBF12D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8DDD9F22803EF900FBF12D /* ViewController.swift */; };
+		BB8DDDA322803EF900FBF12D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB8DDDA122803EF900FBF12D /* Main.storyboard */; };
+		BB8DDDA622803EF900FBF12D /* lucid_task.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BB8DDDA422803EF900FBF12D /* lucid_task.xcdatamodeld */; };
+		BB8DDDA822803EFB00FBF12D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB8DDDA722803EFB00FBF12D /* Assets.xcassets */; };
+		BB8DDDAB22803EFB00FBF12D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB8DDDA922803EFB00FBF12D /* LaunchScreen.storyboard */; };
+		BB8DDDB622803EFB00FBF12D /* lucid_taskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8DDDB522803EFB00FBF12D /* lucid_taskTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB8DDDB222803EFB00FBF12D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB8DDD9222803EF900FBF12D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB8DDD9922803EF900FBF12D;
+			remoteInfo = "lucid-task";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BB8DDD9A22803EF900FBF12D /* lucid-task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "lucid-task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB8DDD9D22803EF900FBF12D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB8DDD9F22803EF900FBF12D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BB8DDDA222803EF900FBF12D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB8DDDA522803EF900FBF12D /* lucid_task.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = lucid_task.xcdatamodel; sourceTree = "<group>"; };
+		BB8DDDA722803EFB00FBF12D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB8DDDAA22803EFB00FBF12D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BB8DDDAC22803EFB00FBF12D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB8DDDB122803EFB00FBF12D /* lucid-taskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "lucid-taskTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB8DDDB522803EFB00FBF12D /* lucid_taskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lucid_taskTests.swift; sourceTree = "<group>"; };
+		BB8DDDB722803EFB00FBF12D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB8DDD9722803EF900FBF12D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB8DDDAE22803EFB00FBF12D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB8DDD9122803EF900FBF12D = {
+			isa = PBXGroup;
+			children = (
+				BB8DDD9C22803EF900FBF12D /* lucid-task */,
+				BB8DDDB422803EFB00FBF12D /* lucid-taskTests */,
+				BB8DDD9B22803EF900FBF12D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB8DDD9B22803EF900FBF12D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB8DDD9A22803EF900FBF12D /* lucid-task.app */,
+				BB8DDDB122803EFB00FBF12D /* lucid-taskTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB8DDD9C22803EF900FBF12D /* lucid-task */ = {
+			isa = PBXGroup;
+			children = (
+				BB8DDD9D22803EF900FBF12D /* AppDelegate.swift */,
+				BB8DDD9F22803EF900FBF12D /* ViewController.swift */,
+				BB8DDDA122803EF900FBF12D /* Main.storyboard */,
+				BB8DDDA722803EFB00FBF12D /* Assets.xcassets */,
+				BB8DDDA922803EFB00FBF12D /* LaunchScreen.storyboard */,
+				BB8DDDAC22803EFB00FBF12D /* Info.plist */,
+				BB8DDDA422803EF900FBF12D /* lucid_task.xcdatamodeld */,
+			);
+			path = "lucid-task";
+			sourceTree = "<group>";
+		};
+		BB8DDDB422803EFB00FBF12D /* lucid-taskTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB8DDDB522803EFB00FBF12D /* lucid_taskTests.swift */,
+				BB8DDDB722803EFB00FBF12D /* Info.plist */,
+			);
+			path = "lucid-taskTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB8DDD9922803EF900FBF12D /* lucid-task */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB8DDDBA22803EFB00FBF12D /* Build configuration list for PBXNativeTarget "lucid-task" */;
+			buildPhases = (
+				BB8DDD9622803EF900FBF12D /* Sources */,
+				BB8DDD9722803EF900FBF12D /* Frameworks */,
+				BB8DDD9822803EF900FBF12D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "lucid-task";
+			productName = "lucid-task";
+			productReference = BB8DDD9A22803EF900FBF12D /* lucid-task.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB8DDDB022803EFB00FBF12D /* lucid-taskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB8DDDBD22803EFB00FBF12D /* Build configuration list for PBXNativeTarget "lucid-taskTests" */;
+			buildPhases = (
+				BB8DDDAD22803EFB00FBF12D /* Sources */,
+				BB8DDDAE22803EFB00FBF12D /* Frameworks */,
+				BB8DDDAF22803EFB00FBF12D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB8DDDB322803EFB00FBF12D /* PBXTargetDependency */,
+			);
+			name = "lucid-taskTests";
+			productName = "lucid-taskTests";
+			productReference = BB8DDDB122803EFB00FBF12D /* lucid-taskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB8DDD9222803EF900FBF12D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Ziyad Khalil";
+				TargetAttributes = {
+					BB8DDD9922803EF900FBF12D = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					BB8DDDB022803EFB00FBF12D = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = BB8DDD9922803EF900FBF12D;
+					};
+				};
+			};
+			buildConfigurationList = BB8DDD9522803EF900FBF12D /* Build configuration list for PBXProject "lucid-task" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB8DDD9122803EF900FBF12D;
+			productRefGroup = BB8DDD9B22803EF900FBF12D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB8DDD9922803EF900FBF12D /* lucid-task */,
+				BB8DDDB022803EFB00FBF12D /* lucid-taskTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB8DDD9822803EF900FBF12D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB8DDDAB22803EFB00FBF12D /* LaunchScreen.storyboard in Resources */,
+				BB8DDDA822803EFB00FBF12D /* Assets.xcassets in Resources */,
+				BB8DDDA322803EF900FBF12D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB8DDDAF22803EFB00FBF12D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB8DDD9622803EF900FBF12D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB8DDDA022803EF900FBF12D /* ViewController.swift in Sources */,
+				BB8DDD9E22803EF900FBF12D /* AppDelegate.swift in Sources */,
+				BB8DDDA622803EF900FBF12D /* lucid_task.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB8DDDAD22803EFB00FBF12D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB8DDDB622803EFB00FBF12D /* lucid_taskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB8DDDB322803EFB00FBF12D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB8DDD9922803EF900FBF12D /* lucid-task */;
+			targetProxy = BB8DDDB222803EFB00FBF12D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BB8DDDA122803EF900FBF12D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB8DDDA222803EF900FBF12D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BB8DDDA922803EFB00FBF12D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB8DDDAA22803EFB00FBF12D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB8DDDB822803EFB00FBF12D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB8DDDB922803EFB00FBF12D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB8DDDBB22803EFB00FBF12D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V674STYMT2;
+				INFOPLIST_FILE = "lucid-task/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "appmoon.lucid-task";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB8DDDBC22803EFB00FBF12D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V674STYMT2;
+				INFOPLIST_FILE = "lucid-task/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "appmoon.lucid-task";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BB8DDDBE22803EFB00FBF12D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V674STYMT2;
+				INFOPLIST_FILE = "lucid-taskTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "appmoon.lucid-taskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lucid-task.app/lucid-task";
+			};
+			name = Debug;
+		};
+		BB8DDDBF22803EFB00FBF12D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V674STYMT2;
+				INFOPLIST_FILE = "lucid-taskTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "appmoon.lucid-taskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lucid-task.app/lucid-task";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB8DDD9522803EF900FBF12D /* Build configuration list for PBXProject "lucid-task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB8DDDB822803EFB00FBF12D /* Debug */,
+				BB8DDDB922803EFB00FBF12D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB8DDDBA22803EFB00FBF12D /* Build configuration list for PBXNativeTarget "lucid-task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB8DDDBB22803EFB00FBF12D /* Debug */,
+				BB8DDDBC22803EFB00FBF12D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB8DDDBD22803EFB00FBF12D /* Build configuration list for PBXNativeTarget "lucid-taskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB8DDDBE22803EFB00FBF12D /* Debug */,
+				BB8DDDBF22803EFB00FBF12D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BB8DDDA422803EF900FBF12D /* lucid_task.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BB8DDDA522803EF900FBF12D /* lucid_task.xcdatamodel */,
+			);
+			currentVersion = BB8DDDA522803EF900FBF12D /* lucid_task.xcdatamodel */;
+			path = lucid_task.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BB8DDD9222803EF900FBF12D /* Project object */;
+}
