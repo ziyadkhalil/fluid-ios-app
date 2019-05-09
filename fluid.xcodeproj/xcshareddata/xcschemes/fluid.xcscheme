@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BB8DDD9922803EF900FBF12D"
-               BuildableName = "lucid-task.app"
-               BlueprintName = "lucid-task"
+               BuildableName = "fluid.app"
+               BlueprintName = "fluid"
                ReferencedContainer = "container:fluid.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,8 +33,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BB8DDDB022803EFB00FBF12D"
-               BuildableName = "lucid-taskTests.xctest"
-               BlueprintName = "lucid-taskTests"
+               BuildableName = "fluidTests.xctest"
+               BlueprintName = "fluidTests"
                ReferencedContainer = "container:fluid.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -43,8 +43,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BB8DDD9922803EF900FBF12D"
-            BuildableName = "lucid-task.app"
-            BlueprintName = "lucid-task"
+            BuildableName = "fluid.app"
+            BlueprintName = "fluid"
             ReferencedContainer = "container:fluid.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -66,8 +66,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BB8DDD9922803EF900FBF12D"
-            BuildableName = "lucid-task.app"
-            BlueprintName = "lucid-task"
+            BuildableName = "fluid.app"
+            BlueprintName = "fluid"
             ReferencedContainer = "container:fluid.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -85,8 +85,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BB8DDD9922803EF900FBF12D"
-            BuildableName = "lucid-task.app"
-            BlueprintName = "lucid-task"
+            BuildableName = "fluid.app"
+            BlueprintName = "fluid"
             ReferencedContainer = "container:fluid.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

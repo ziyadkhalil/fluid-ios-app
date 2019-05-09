@@ -14,7 +14,7 @@
 		BB8DDDA322803EF900FBF12D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB8DDDA122803EF900FBF12D /* Main.storyboard */; };
 		BB8DDDA822803EFB00FBF12D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB8DDDA722803EFB00FBF12D /* Assets.xcassets */; };
 		BB8DDDAB22803EFB00FBF12D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB8DDDA922803EFB00FBF12D /* LaunchScreen.storyboard */; };
-		BB8DDDB622803EFB00FBF12D /* lucid_taskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8DDDB522803EFB00FBF12D /* lucid_taskTests.swift */; };
+		BB8DDDB622803EFB00FBF12D /* fluidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8DDDB522803EFB00FBF12D /* fluidTests.swift */; };
 		BB8DDDC222804A3A00FBF12D /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BB8DDDC122804A2E00FBF12D /* Montserrat-Regular.ttf */; };
 		BB8DDDC62281978E00FBF12D /* NavBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8DDDC52281978E00FBF12D /* NavBarController.swift */; };
 		BB8DDDC822819D9700FBF12D /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8DDDC722819D9700FBF12D /* DetailsViewController.swift */; };
@@ -39,15 +39,15 @@
 /* Begin PBXFileReference section */
 		BB27BB852283679200568E2C /* UITextView+Placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Placeholder.swift"; sourceTree = "<group>"; };
 		BB27BB8A22843D3A00568E2C /* fluid.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = fluid.xcdatamodel; sourceTree = "<group>"; };
-		BB8DDD9A22803EF900FBF12D /* lucid-task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "lucid-task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB8DDD9A22803EF900FBF12D /* fluid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fluid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB8DDD9D22803EF900FBF12D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB8DDD9F22803EF900FBF12D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BB8DDDA222803EF900FBF12D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BB8DDDA722803EFB00FBF12D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB8DDDAA22803EFB00FBF12D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB8DDDAC22803EFB00FBF12D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BB8DDDB122803EFB00FBF12D /* lucid-taskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "lucid-taskTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB8DDDB522803EFB00FBF12D /* lucid_taskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lucid_taskTests.swift; sourceTree = "<group>"; };
+		BB8DDDB122803EFB00FBF12D /* fluid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fluid.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB8DDDB522803EFB00FBF12D /* fluidTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fluidTests.swift; sourceTree = "<group>"; };
 		BB8DDDB722803EFB00FBF12D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB8DDDC122804A2E00FBF12D /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Regular.ttf"; path = "../../../../Downloads/Montserrat/Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		BB8DDDC52281978E00FBF12D /* NavBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarController.swift; sourceTree = "<group>"; };
@@ -84,7 +84,7 @@
 				BB8DDDCD2281F4E100FBF12D /* Entity+CoreDataClass.swift */,
 				BB8DDDCE2281F4E100FBF12D /* Entity+CoreDataProperties.swift */,
 				BB8DDD9C22803EF900FBF12D /* fluid */,
-				BB8DDDB422803EFB00FBF12D /* lucid-taskTests */,
+				BB8DDDB422803EFB00FBF12D /* fluidTests */,
 				BB8DDD9B22803EF900FBF12D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,8 +92,8 @@
 		BB8DDD9B22803EF900FBF12D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BB8DDD9A22803EF900FBF12D /* lucid-task.app */,
-				BB8DDDB122803EFB00FBF12D /* lucid-taskTests.xctest */,
+				BB8DDD9A22803EF900FBF12D /* fluid.app */,
+				BB8DDDB122803EFB00FBF12D /* fluid.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,13 +118,13 @@
 			path = fluid;
 			sourceTree = "<group>";
 		};
-		BB8DDDB422803EFB00FBF12D /* lucid-taskTests */ = {
+		BB8DDDB422803EFB00FBF12D /* fluidTests */ = {
 			isa = PBXGroup;
 			children = (
-				BB8DDDB522803EFB00FBF12D /* lucid_taskTests.swift */,
+				BB8DDDB522803EFB00FBF12D /* fluidTests.swift */,
 				BB8DDDB722803EFB00FBF12D /* Info.plist */,
 			);
-			path = "lucid-taskTests";
+			path = fluidTests;
 			sourceTree = "<group>";
 		};
 		BB8DDDC022804A1C00FBF12D /* fonts */ = {
@@ -148,9 +148,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BB8DDD9922803EF900FBF12D /* lucid-task */ = {
+		BB8DDD9922803EF900FBF12D /* fluid */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BB8DDDBA22803EFB00FBF12D /* Build configuration list for PBXNativeTarget "lucid-task" */;
+			buildConfigurationList = BB8DDDBA22803EFB00FBF12D /* Build configuration list for PBXNativeTarget "fluid" */;
 			buildPhases = (
 				BB8DDD9622803EF900FBF12D /* Sources */,
 				BB8DDD9722803EF900FBF12D /* Frameworks */,
@@ -160,14 +160,14 @@
 			);
 			dependencies = (
 			);
-			name = "lucid-task";
+			name = fluid;
 			productName = "lucid-task";
-			productReference = BB8DDD9A22803EF900FBF12D /* lucid-task.app */;
+			productReference = BB8DDD9A22803EF900FBF12D /* fluid.app */;
 			productType = "com.apple.product-type.application";
 		};
-		BB8DDDB022803EFB00FBF12D /* lucid-taskTests */ = {
+		BB8DDDB022803EFB00FBF12D /* fluidTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BB8DDDBD22803EFB00FBF12D /* Build configuration list for PBXNativeTarget "lucid-taskTests" */;
+			buildConfigurationList = BB8DDDBD22803EFB00FBF12D /* Build configuration list for PBXNativeTarget "fluidTests" */;
 			buildPhases = (
 				BB8DDDAD22803EFB00FBF12D /* Sources */,
 				BB8DDDAE22803EFB00FBF12D /* Frameworks */,
@@ -178,9 +178,9 @@
 			dependencies = (
 				BB8DDDB322803EFB00FBF12D /* PBXTargetDependency */,
 			);
-			name = "lucid-taskTests";
+			name = fluidTests;
 			productName = "lucid-taskTests";
-			productReference = BB8DDDB122803EFB00FBF12D /* lucid-taskTests.xctest */;
+			productReference = BB8DDDB122803EFB00FBF12D /* fluid.app */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -215,8 +215,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BB8DDD9922803EF900FBF12D /* lucid-task */,
-				BB8DDDB022803EFB00FBF12D /* lucid-taskTests */,
+				BB8DDD9922803EF900FBF12D /* fluid */,
+				BB8DDDB022803EFB00FBF12D /* fluidTests */,
 			);
 		};
 /* End PBXProject section */
@@ -266,7 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB8DDDB622803EFB00FBF12D /* lucid_taskTests.swift in Sources */,
+				BB8DDDB622803EFB00FBF12D /* fluidTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +275,7 @@
 /* Begin PBXTargetDependency section */
 		BB8DDDB322803EFB00FBF12D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BB8DDD9922803EF900FBF12D /* lucid-task */;
+			target = BB8DDD9922803EF900FBF12D /* fluid */;
 			targetProxy = BB8DDDB222803EFB00FBF12D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -506,7 +506,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BB8DDDBA22803EFB00FBF12D /* Build configuration list for PBXNativeTarget "lucid-task" */ = {
+		BB8DDDBA22803EFB00FBF12D /* Build configuration list for PBXNativeTarget "fluid" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BB8DDDBB22803EFB00FBF12D /* Debug */,
@@ -515,7 +515,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BB8DDDBD22803EFB00FBF12D /* Build configuration list for PBXNativeTarget "lucid-taskTests" */ = {
+		BB8DDDBD22803EFB00FBF12D /* Build configuration list for PBXNativeTarget "fluidTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BB8DDDBE22803EFB00FBF12D /* Debug */,
