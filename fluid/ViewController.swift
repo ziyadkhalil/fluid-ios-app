@@ -8,41 +8,47 @@
 
 import UIKit
 import CoreData
+import JTAppleCalendar
 
 
 class ViewController: UIViewController {
-    var container: NSPersistentContainer!
     var dateText: String!
-//    var data = ["Fetch Anna from school","Get a burger","Buy Tickets for the movie","Fetch Anna from school","Get a burger","Buy Tickets for the movie","Fetch Anna from school","Get a burger","Buy Tickets for the movie","Fetch Anna from school","Get a burger","Buy Tickets for the movie","Fetch Anna from school","Get a burger","Buy Tickets for the movie"]
-//    var data: [Entity] = []
+
     var tasksData: [Entity] = []
     var eventsData: [Entity] = []
     var notesData: [Entity] = []
     @IBOutlet weak var eventsTable: UITableView!
+    @IBOutlet weak var calendar: JTAppleCalendarView!
+    @IBOutlet weak var calendarView: UIView!
     //IB outlets
-    @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var tasksTable: UITableView!
     @IBOutlet weak var notesTable: UITableView!
+    @IBOutlet weak var calenderMonthLabel: UILabel!
     
+    @IBOutlet weak var dateLabel: UILabel!
     //NavigationBar Reference
     var navBarController: NavBarController!
     
-    
-    
+    @IBAction func dateLabelTapped(_ sender: Any) {
+        UIView.animate(withDuration: 0.3) {
+            self.dateLabel.isHidden = true
+            self.calendarView.isHidden = false
+        }
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        tasksTable.dataSource = self
+        calendar.deselectAllDates()
+        calendar.allowsMultipleSelection = false
+        calendar.scrollToDate(navBarController.currentDate)
         
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         navBarController.setNavigationBarHidden(true, animated: true)
-        dateLabel.text? = dateText
-        tasksData = navBarController.currentTasks
-        eventsData = navBarController.currentEvents
-        notesData = navBarController.currentNotes
-        reloadTables()
+        refresh()
+
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -97,6 +103,15 @@ class ViewController: UIViewController {
         eventsTable.reloadData()
     }
     
+    func refresh(){
+        dateLabel.text? = dateText
+        tasksData = navBarController.currentTasks
+        eventsData = navBarController.currentEvents
+        notesData = navBarController.currentNotes
+        reloadTables()
+    }
+    
+
     }
 
 //--MARK: TABLE DELEGATE AND DATA SOURCE EXTENSION
@@ -149,3 +164,58 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     
 }
+
+
+//-MARK:- JTAppleCalendar Delegate, Data source
+
+extension ViewController: JTAppleCalendarViewDelegate, JTAppleCalendarViewDataSource {
+    func configureCalendar(_ calendar: JTAppleCalendarView) -> ConfigurationParameters {
+    let formatter = DateFormatter()
+    formatter.dateFormat = "yyyy MM dd"
+    let startDate = formatter.date(from: "2018 01 01")!
+        let endDate = formatter.date(from: "2025 01 01")!
+    return ConfigurationParameters(startDate: startDate, endDate: endDate)
+    }
+    func calendar(_ calendar: JTAppleCalendarView, cellForItemAt date: Date, cellState: CellState, indexPath: IndexPath) -> JTAppleCell {
+    let cell = calendar.dequeueReusableJTAppleCell(withReuseIdentifier: "dateCell", for: indexPath) as! DateCell
+    cell.dateLabel.text = cellState.text
+        if cellState.dateBelongsTo != .thisMonth {
+            cell.dateLabel.textColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
+        }
+        else {
+            cell.dateLabel.textColor = UIColor.white
+        }
+        if date.startOfDay == navBarController.currentDate.startOfDay {
+            cell.markSelected()
+        }
+        else {
+            cell.markDeselected()
+        }
+    return cell
+    }
+    func calendar(_ calendar: JTAppleCalendarView, willDisplay cell: JTAppleCell, forItemAt date: Date, cellState: CellState, indexPath: IndexPath) {
+        let cell = cell as! DateCell
+        cell.dateLabel.text = cellState.text
+    }
+    func calendar(_ calendar: JTAppleCalendarView, didScrollToDateSegmentWith visibleDates: DateSegmentInfo) {
+        self.calenderMonthLabel.text! = visibleDates.monthDates[0].date.getMonth()
+    }
+    func calendar(_ calendar: JTAppleCalendarView, didSelectDate date: Date, cell: JTAppleCell?, cellState: CellState) {
+        navBarController.setNewDate(date: date)
+        UIView.animate(withDuration: 0.4) {
+            self.dateLabel.isHidden = false
+            self.calendarView.isHidden = true
+        }
+        refresh()
+        calendar.reloadData()
+    }
+
+}
+
+
+
+
+
+
+
+

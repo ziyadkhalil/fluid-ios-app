@@ -75,12 +75,7 @@ class NavBarController: UINavigationController {
     
     func setMainController(){
         mainController = (self.viewControllers[0] as! ViewController)
-        let formatter = DateFormatter()
-        formatter.dateFormat = "d MMMM"
-        mainController.dateText = formatter.string(from: currentDate)
-        mainController.tasksData = currentTasks
-        mainController.eventsData = currentEvents
-        mainController.notesData = currentNotes
+        refresh()
     }
     
     func saveDate(){
@@ -124,5 +119,22 @@ class NavBarController: UINavigationController {
         case .event:
             return currentEvents
         }
+    }
+    
+    func setNewDate(date: Date){
+        self.currentDate = date
+        self.startDate = date.startOfDay
+        self.endDate = date.endOfDay
+        loadData()
+        refresh()
+    }
+    
+    func refresh(){
+        let formatter = DateFormatter()
+        formatter.dateFormat = "d MMMM"
+        mainController.dateText = formatter.string(from: currentDate)
+        mainController.tasksData = currentTasks
+        mainController.eventsData = currentEvents
+        mainController.notesData = currentNotes
     }
 }
