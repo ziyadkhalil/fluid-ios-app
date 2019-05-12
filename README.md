@@ -2,7 +2,7 @@
 A bullet journaling iOS app
 
 ## UI/UX
-UI/UX project for fluid on [Behance](https://www.behance.net/gallery/80004421/Fluid-Bullet-Journaling-App?share=1).
+UI/UX project for fluid on [Behance](https://www.behance.net/gallery/80004421/Fluid-Bullet-Journaling-App?share=1) by [Hesham El-Fakharani](https://www.behance.net/Hesham_Elfakharani)
 
 ## Installing
 * Close Xcode
