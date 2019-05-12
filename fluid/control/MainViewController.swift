@@ -12,23 +12,26 @@ import JTAppleCalendar
 
 
 class MainViewController: UIViewController {
+    
+    //-MARK:- Attributes
+    
+    var navBarController: NavBarController!     //NavigationController Reference
     var dateText: String!
-
     var tasksData: [Entity] = []
     var eventsData: [Entity] = []
     var notesData: [Entity] = []
     @IBOutlet weak var eventsTable: UITableView!
     @IBOutlet weak var calendar: JTAppleCalendarView!
     @IBOutlet weak var calendarView: UIView!
+    
     //IB outlets
     @IBOutlet weak var tasksTable: UITableView!
     @IBOutlet weak var notesTable: UITableView!
     @IBOutlet weak var calenderMonthLabel: UILabel!
-    
     @IBOutlet weak var dateLabel: UILabel!
-    //NavigationBar Reference
-    var navBarController: NavBarController!
+
     
+    //MARK:- Functions
     @IBAction func dateLabelTapped(_ sender: Any) {
         calendar.reloadData()
         UIView.animate(withDuration: 0.3) {

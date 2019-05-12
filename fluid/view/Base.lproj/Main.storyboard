@@ -335,7 +335,7 @@
                                                 <rect key="frame" x="0.0" y="158" width="331" height="142"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zka-bH-ZQc">
-                                                        <rect key="frame" x="16" y="5" width="48" height="22"/>
+                                                        <rect key="frame" x="16" y="5" width="53" height="22"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="UTt-we-KkZ"/>
                                                         </constraints>
@@ -355,7 +355,7 @@
                                                                     <autoresizingMask key="autoresizingMask"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get tickets for the game" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fRm-NM-FUg">
-                                                                            <rect key="frame" x="15" y="0.0" width="268" height="40"/>
+                                                                            <rect key="frame" x="15" y="0.0" width="276" height="40"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="40" id="6kp-Fl-xDY"/>
                                                                             </constraints>
@@ -405,7 +405,7 @@
                                                 <rect key="frame" x="0.0" y="316" width="331" height="142"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Events" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xRx-LG-SnS">
-                                                        <rect key="frame" x="16" y="5" width="54.5" height="22"/>
+                                                        <rect key="frame" x="16" y="5" width="60.5" height="22"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="SXE-9V-hV8"/>
                                                         </constraints>
@@ -426,7 +426,7 @@
                                                                     <autoresizingMask key="autoresizingMask"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get tickets for the game" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0a0-et-b78">
-                                                                            <rect key="frame" x="8" y="0.0" width="275" height="40.5"/>
+                                                                            <rect key="frame" x="8" y="0.0" width="283" height="40.5"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="40" id="L7d-6Q-gI8"/>
                                                                             </constraints>
@@ -767,7 +767,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Task" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YuV-xh-OBB">
-                                        <rect key="frame" x="20" y="1" width="282" height="35"/>
+                                        <rect key="frame" x="20" y="0.0" width="282" height="37"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="144" id="s74-c4-AYP"/>
                                         </constraints>
@@ -800,6 +800,7 @@
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" keyboardDismissMode="onDrag" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wib-7b-grr">
                                 <rect key="frame" x="20" y="92" width="339" height="555"/>
+                                <gestureRecognizers/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardAppearance="alert"/>
