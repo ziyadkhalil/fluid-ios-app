@@ -45,7 +45,7 @@
 		BB27BB852283679200568E2C /* UITextView+Placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Placeholder.swift"; sourceTree = "<group>"; };
 		BB27BB8A22843D3A00568E2C /* fluid.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = fluid.xcdatamodel; sourceTree = "<group>"; };
 		BB27BB8F228445DD00568E2C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
-		BB6C5D3A2284836D00101E1D /* Maison Neue Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Maison Neue Medium.otf"; path = "../../../../Downloads/Maison Neue Medium.otf"; sourceTree = "<group>"; };
+		BB6C5D3A2284836D00101E1D /* Maison Neue Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Maison Neue Medium.otf"; sourceTree = "<group>"; };
 		BB6C5D472284963300101E1D /* DateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateCell.swift; sourceTree = "<group>"; };
 		BB8DDD9A22803EF900FBF12D /* fluid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fluid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB8DDD9D22803EF900FBF12D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,7 +57,7 @@
 		BB8DDDB122803EFB00FBF12D /* fluidTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fluidTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB8DDDB522803EFB00FBF12D /* fluidTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fluidTests.swift; sourceTree = "<group>"; };
 		BB8DDDB722803EFB00FBF12D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BB8DDDC122804A2E00FBF12D /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Regular.ttf"; path = "../../../../Downloads/Montserrat/Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		BB8DDDC122804A2E00FBF12D /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		BB8DDDC52281978E00FBF12D /* NavBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarController.swift; sourceTree = "<group>"; };
 		BB8DDDC722819D9700FBF12D /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		BB8DDDCD2281F4E100FBF12D /* Entity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entity+CoreDataClass.swift"; sourceTree = "<group>"; };
