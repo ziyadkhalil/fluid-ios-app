@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainViewController.swift
 //  fluid
 //
 //  Created by Ziyad Khalil on 5/6/19.
@@ -11,7 +11,7 @@ import CoreData
 import JTAppleCalendar
 
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
     var dateText: String!
 
     var tasksData: [Entity] = []
@@ -30,6 +30,7 @@ class ViewController: UIViewController {
     var navBarController: NavBarController!
     
     @IBAction func dateLabelTapped(_ sender: Any) {
+        calendar.reloadData()
         UIView.animate(withDuration: 0.3) {
             self.dateLabel.isHidden = true
             self.calendarView.isHidden = false
@@ -115,7 +116,7 @@ class ViewController: UIViewController {
     }
 
 //--MARK: TABLE DELEGATE AND DATA SOURCE EXTENSION
-extension ViewController: UITableViewDelegate, UITableViewDataSource {
+extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch (tableView.tag) {
         case 0:
@@ -168,7 +169,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 
 //-MARK:- JTAppleCalendar Delegate, Data source
 
-extension ViewController: JTAppleCalendarViewDelegate, JTAppleCalendarViewDataSource {
+extension MainViewController: JTAppleCalendarViewDelegate, JTAppleCalendarViewDataSource {
     func configureCalendar(_ calendar: JTAppleCalendarView) -> ConfigurationParameters {
     let formatter = DateFormatter()
     formatter.dateFormat = "yyyy MM dd"
@@ -179,18 +180,17 @@ extension ViewController: JTAppleCalendarViewDelegate, JTAppleCalendarViewDataSo
     func calendar(_ calendar: JTAppleCalendarView, cellForItemAt date: Date, cellState: CellState, indexPath: IndexPath) -> JTAppleCell {
     let cell = calendar.dequeueReusableJTAppleCell(withReuseIdentifier: "dateCell", for: indexPath) as! DateCell
     cell.dateLabel.text = cellState.text
-        if cellState.dateBelongsTo != .thisMonth {
-            cell.dateLabel.textColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
-        }
-        else {
-            cell.dateLabel.textColor = UIColor.white
-        }
         if date.startOfDay == navBarController.currentDate.startOfDay {
             cell.markSelected()
         }
         else {
             cell.markDeselected()
         }
+        if cellState.dateBelongsTo != .thisMonth {
+            cell.dateLabel.textColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
+        }
+
+
     return cell
     }
     func calendar(_ calendar: JTAppleCalendarView, willDisplay cell: JTAppleCell, forItemAt date: Date, cellState: CellState, indexPath: IndexPath) {
@@ -202,12 +202,18 @@ extension ViewController: JTAppleCalendarViewDelegate, JTAppleCalendarViewDataSo
     }
     func calendar(_ calendar: JTAppleCalendarView, didSelectDate date: Date, cell: JTAppleCell?, cellState: CellState) {
         navBarController.setNewDate(date: date)
+        calendar.reloadData()
+        if cellState.dateBelongsTo != .thisMonth {
+            calendar.scrollToDate(date)
+        } else {
+        }
         UIView.animate(withDuration: 0.4) {
             self.dateLabel.isHidden = false
             self.calendarView.isHidden = true
         }
+
+  
         refresh()
-        calendar.reloadData()
     }
 
 }

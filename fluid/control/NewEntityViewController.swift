@@ -19,16 +19,17 @@ class NewEntityViewController: UIViewController {
     //-MARK: IBOutlets
     @IBOutlet weak var textView: UITextView!
     
-    //-MARK: Top Bari
+    //-MARK: Top Bar
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var saveButton: UIButton!
     
+    
+    //-MARK:- Functions
     @IBAction func save(_ sender: UIButton) {
         navBarController.addEntity(mode: currentMode,value: textView.text);
         performSegue(withIdentifier: "UnwindAddingSegue", sender: self)
     }
-    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

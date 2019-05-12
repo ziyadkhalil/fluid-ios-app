@@ -8,20 +8,22 @@
 
 import UIKit
 class DetailsViewController: UIViewController {
-    //NavigationBar Reference
-    var navBarController: NavBarController!
-    @IBOutlet weak var table: UITableView!
+    
+    //MARK:- Attributes
+    var navBarController: NavBarController!  //NavigationBar Reference
     var currentMode: EntityType!
     var data: [Entity] = []
+    //IBOutlets
+    @IBOutlet weak var table: UITableView!
+    
+    
+    //MARK:- Functions
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.data = navBarController.getData(mode: currentMode)
         table.reloadData()
-        
     }
-
     
-    @IBAction func unwindAddingNewStuff(segue:UIStoryboardSegue) { }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
         switch (segue.identifier!){
@@ -34,9 +36,11 @@ class DetailsViewController: UIViewController {
             break
         }
     }
+
+    @IBAction func unwindAddingNewStuff(segue:UIStoryboardSegue) {}
     
 }
-
+//MARK:- TableView Extension
 extension DetailsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count
