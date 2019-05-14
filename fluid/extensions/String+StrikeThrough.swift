@@ -8,8 +8,10 @@
 import UIKit
 extension String{
     func strikeThrough()->NSAttributedString{
-        let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: self)
-        attributeString.addAttribute(NSAttributedString.Key.strikethroughStyle, value: NSUnderlineStyle.single.rawValue, range: NSMakeRange(0, attributeString.length))
+        let value = ".    "+self
+        let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string:(value))
+        attributeString.addAttribute(NSAttributedString.Key.strikethroughStyle, value: 2, range: NSMakeRange(0, attributeString.length))
+        attributeString.addAttributes([NSAttributedString.Key.foregroundColor: UIColor(named: "LamonyKamony")], range: NSMakeRange(0, 1))
         return attributeString
     }
 }

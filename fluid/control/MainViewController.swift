@@ -18,8 +18,11 @@ class MainViewController: UIViewController {
     var navBarController: NavBarController!     //NavigationController Reference
     var dateText: String!
     var tasksData: [Entity] = []
+    var doneTasks: [Entity] = []
+    var undoneTasks: [Entity] = []
     var eventsData: [Entity] = []
     var notesData: [Entity] = []
+    var gradient: CAGradientLayer!
     @IBOutlet weak var eventsTable: UITableView!
     @IBOutlet weak var calendar: JTAppleCalendarView!
     @IBOutlet weak var calendarView: UIView!
@@ -110,6 +113,12 @@ class MainViewController: UIViewController {
     func refresh(){
         dateLabel.text? = dateText
         tasksData = navBarController.currentTasks
+        doneTasks = []
+        undoneTasks = []
+        tasksData.forEach{ task in
+            if task.isTaskDone {doneTasks.append(task)}
+            else {undoneTasks.append(task)}
+        }
         eventsData = navBarController.currentEvents
         notesData = navBarController.currentNotes
         reloadTables()
@@ -121,12 +130,12 @@ class MainViewController: UIViewController {
 //--MARK: TABLE DELEGATE AND DATA SOURCE EXTENSION
 extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        switch (tableView.tag) {
-        case 0:
-            return tasksData.count
-        case 1:
+        switch (tableView) {
+        case tasksTable:
+            return (section == 0 ? self.undoneTasks.count : self.doneTasks.count)
+        case notesTable:
             return notesData.count
-        case 2:
+        case eventsTable:
             return eventsData.count
         default:
             return -1
@@ -134,39 +143,47 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell: UITableViewCell!
-        let label: UILabel!
-        switch(tableView.tag){
-        case 0:
-            if !tasksData[indexPath.row].isTaskDone {
-                cell = tableView.dequeueReusableCell(withIdentifier: "UnfinishedBusiness")
-                label = (cell.subviews[0].subviews[0] as! UILabel)
-                label.text = tasksData[indexPath.row].value!
+        var cell: MainViewCell!
+        switch(tableView){
+        case tasksTable:
+            if indexPath.section == 0 {
+                cell = (tableView.dequeueReusableCell(withIdentifier: "UnfinishedBusiness") as! MainViewCell)
+                cell.label.text = undoneTasks[indexPath.row].value!
+                cell.label.sizeToFit()
+                tableView.rowHeight = cell.label.frame.height + 6
             }
             else {
-                cell = tableView.dequeueReusableCell(withIdentifier: "FinishedBusiness")
-                label = (cell.subviews[0].subviews[0] as! UILabel)
-                label.attributedText = tasksData[indexPath.row].value!.strikeThrough()
+                cell = (tableView.dequeueReusableCell(withIdentifier: "FinishedBusiness") as! MainViewCell)
+                cell.label.attributedText = doneTasks[indexPath.row].value!.strikeThrough()
+                cell.label.sizeToFit()
+                tableView.rowHeight = cell.label.frame.height + 6
             }
             break
-        case 1:
-            cell = tableView.dequeueReusableCell(withIdentifier: "Note")
-            label = (cell.subviews[0].subviews[0] as! UILabel)
-            label.text = notesData[indexPath.row].value!
+        case notesTable:
+            cell = (tableView.dequeueReusableCell(withIdentifier: "Note") as! MainViewCell)
+            cell.label.text = notesData[indexPath.row].value!
+            cell.label.sizeToFit()
+            tableView.rowHeight = cell.label.frame.height + 6
             break
-        case 2:
-            cell = tableView.dequeueReusableCell(withIdentifier: "Event")
-            label = (cell.subviews[0].subviews[0] as! UILabel)
-            label.text = eventsData[indexPath.row].value!
+        case eventsTable:
+            cell = (tableView.dequeueReusableCell(withIdentifier: "Event") as! MainViewCell)
+            cell.label.text = eventsData[indexPath.row].value!
+            cell.label.sizeToFit()
+            tableView.rowHeight = cell.label.frame.height + 6
             break
         default:
             break
         }
-        
         return cell
     }
-    
-    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        switch tableView {
+        case tasksTable:
+            return 2
+        default:
+            return 1
+        }
+    }
 }
 
 

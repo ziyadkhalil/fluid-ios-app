@@ -81,7 +81,7 @@ class NavBarController: UINavigationController {
     
     
     /// Saves changes done to CoreData
-    func saveDate(){
+    func saveData(){
         if container.viewContext.hasChanges {
             do {
                 try container.viewContext.save()
@@ -113,9 +113,31 @@ class NavBarController: UINavigationController {
             currentEvents.append(entity)
             break
         }
-        saveDate()
+        saveData()
         print("added")
         
+    }
+    
+    
+    /// removes an entity from CoreData
+    ///
+    /// - Parameter entity: entity to be removed
+    func removeEntity(_ entity :Entity){
+        switch entity.type! {
+        case "task":
+            currentTasks.removeAll(where: {$0 == entity})
+            break
+        case "note":
+            currentNotes.removeAll(where: {$0 == entity})
+            break
+        case "event":
+            currentEvents.removeAll(where: {$0 == entity})
+            break
+        default:
+            break
+        }
+        container.viewContext.delete(entity)
+        saveData()
     }
     
     

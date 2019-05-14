@@ -11,6 +11,8 @@
 		BB27BB862283679200568E2C /* UITextView+Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB27BB852283679200568E2C /* UITextView+Placeholder.swift */; };
 		BB27BB8B22843D3B00568E2C /* fluid.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BB27BB8922843D3A00568E2C /* fluid.xcdatamodeld */; };
 		BB27BB90228445DD00568E2C /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = BB27BB8F228445DD00568E2C /* Podfile */; };
+		BB62A810228A0B3200D471E0 /* DetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB62A80F228A0B3200D471E0 /* DetailsCell.swift */; };
+		BB62A812228B0D9B00D471E0 /* MainViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB62A811228B0D9B00D471E0 /* MainViewCell.swift */; };
 		BB6C5D482284963300101E1D /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6C5D472284963300101E1D /* DateCell.swift */; };
 		BB8DDD9E22803EF900FBF12D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8DDD9D22803EF900FBF12D /* AppDelegate.swift */; };
 		BB8DDDA022803EF900FBF12D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8DDD9F22803EF900FBF12D /* MainViewController.swift */; };
@@ -45,6 +47,8 @@
 		BB27BB852283679200568E2C /* UITextView+Placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Placeholder.swift"; sourceTree = "<group>"; };
 		BB27BB8A22843D3A00568E2C /* fluid.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = fluid.xcdatamodel; sourceTree = "<group>"; };
 		BB27BB8F228445DD00568E2C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		BB62A80F228A0B3200D471E0 /* DetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCell.swift; sourceTree = "<group>"; };
+		BB62A811228B0D9B00D471E0 /* MainViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewCell.swift; sourceTree = "<group>"; };
 		BB6C5D3A2284836D00101E1D /* Maison Neue Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Maison Neue Medium.otf"; sourceTree = "<group>"; };
 		BB6C5D472284963300101E1D /* DateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateCell.swift; sourceTree = "<group>"; };
 		BB8DDD9A22803EF900FBF12D /* fluid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fluid.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -178,8 +182,10 @@
 				BB8DDD9F22803EF900FBF12D /* MainViewController.swift */,
 				BB8DDDD12282F16B00FBF12D /* NewEntityViewController.swift */,
 				BB8DDDC722819D9700FBF12D /* DetailsViewController.swift */,
+				BB62A80F228A0B3200D471E0 /* DetailsCell.swift */,
 				BB8DDDD822831A3B00FBF12D /* EntityType.swift */,
 				BB6C5D472284963300101E1D /* DateCell.swift */,
+				BB62A811228B0D9B00D471E0 /* MainViewCell.swift */,
 			);
 			path = control;
 			sourceTree = "<group>";
@@ -353,6 +359,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB62A812228B0D9B00D471E0 /* MainViewCell.swift in Sources */,
+				BB62A810228A0B3200D471E0 /* DetailsCell.swift in Sources */,
 				BB8DDDA022803EF900FBF12D /* MainViewController.swift in Sources */,
 				BB8DDDD02281F4E100FBF12D /* Entity+CoreDataProperties.swift in Sources */,
 				BB8DDD9E22803EF900FBF12D /* AppDelegate.swift in Sources */,
